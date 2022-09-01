@@ -3,5 +3,5 @@
     
     </x-slot> --}}
     <h2>dashboard</h2>
-    <a href="{{ url('samsung') }}">hp samsung</a>
+    <a href="{{ url('samsung') }}">hp ovo</a>
 </x-frest-layout>
