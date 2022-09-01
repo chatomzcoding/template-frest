@@ -19,6 +19,18 @@ class HomeController extends Controller
 
     public function samsung()
     {
-        return view('samsung');
+        // $request->validate([
+        //     'gambar_artikel' => 'required|file|image|mimes:jpeg,png,jpg|max:4000',
+        // ]);
+        // menyimpan data file yang diupload ke variabel $file
+        // $file = $request->file('gambar_artikel');
+        
+        // $nama_file = time()."_".$file->getClientOriginalName();
+        
+        // isi dengan nama folder tempat kemana file diupload
+        // $tujuan_upload = $this->folder;
+        // $file->move($tujuan_upload,$nama_file);
     }
+
+    
 }
