@@ -28,6 +28,12 @@
                         <div data-i18n="Daftar Wisata">Daftar Wisata</div>
                         </a>
                     </li>
+                    <li class="menu-item">
+                        <a href="{{ url('gadget') }}" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-menu"></i>
+                        <div data-i18n="Daftar Gadget">Daftar Gadget</div>
+                        </a>
+                    </li>
               </ul>
           </li>
 

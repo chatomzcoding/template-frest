@@ -7,7 +7,7 @@
         @forelse ($wisata as $item)
             <div class="col-md-3">
                 <div class="card h-100">
-                    <img class="card-img-top" src="{{ asset('img/informasi/wisata/'.$item->gambar) }}" alt="Card image cap" />
+                    <img class="card-img-top" src="{{ asset('img/informasi/wisata/'.$item->gambar) }}" alt="Card image cap"/>
                     <div class="card-body">
                     <h5 class="card-title">{{ ucwords($item->nama) }}</h5>
                     <p class="card-text">

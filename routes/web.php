@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\HomepageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HpController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\GadgetController;
 use App\Http\Controllers\WisataController;
+use App\Http\Controllers\HomepageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +35,7 @@ Route::middleware([
 
     // route wisata
     Route::resource('wisata',WisataController::class); // contoh route crud
+
+    // route gadget
+    Route::resource('gadget',GadgetController::class); // contoh route crud
 });
