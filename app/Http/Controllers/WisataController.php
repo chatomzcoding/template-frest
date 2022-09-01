@@ -50,7 +50,6 @@ class WisataController extends Controller
         $tujuan_upload = "public/img/informasi/wisata";
         $file->move($tujuan_upload,$nama_file);
 
-
         // simpan ke database
         Wisata::create([
             'nama' => $request->nama,
@@ -70,9 +69,10 @@ class WisataController extends Controller
      * @param  \App\Models\Wisata  $wisata
      * @return \Illuminate\Http\Response
      */
-    public function show(Wisata $wisata)
+    public function show($wisata)
     {
-        //
+        $wisata = Wisata::find($wisata);
+        return view('informasi.wisata.show', compact('wisata'));
     }
 
     /**
@@ -104,8 +104,11 @@ class WisataController extends Controller
      * @param  \App\Models\Wisata  $wisata
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Wisata $wisata)
+    public function destroy($wisata)
     {
-        //
+        $wisata = Wisata::find($wisata);
+        deletefile('public/img/informasi/wisata/'.$wisata->gambar);
+        $wisata->delete();
+        return back();
     }
 }

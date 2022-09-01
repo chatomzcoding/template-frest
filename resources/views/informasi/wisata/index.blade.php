@@ -13,6 +13,7 @@
                     <tr>
                         <th width="5%">No</th>
                         <th width="10%">Aksi</th>
+                        <th>Gambar</th>
                         <th>Nama Wisata</th>
                         <th>Alamat</th>
                         <th>Kategori</th>
@@ -25,8 +26,9 @@
                         <tr>
                             <td>1</td>
                             <td>
-                                <x-aksi :id="1" link="inventaris"></x-aksi>
+                                <x-aksi :id="$item->id" link="wisata" detail="wisata/{{ $item->id }}"></x-aksi>
                             </td>
+                            <td><img src="{{ asset('img/informasi/wisata/'.$item->gambar) }}" width="100px" alt=""></td>
                             <td>{{ $item->nama }}</td>
                             <td>{{ $item->alamat }}</td>
                             <td>{{ $item->kategori }}</td>
@@ -35,7 +37,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="7" class="text-center">belum ada data</td>
+                            <td colspan="8" class="text-center">belum ada data</td>
                         </tr>
                     @endforelse
                 </tbody>

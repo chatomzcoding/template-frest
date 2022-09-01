@@ -31,9 +31,9 @@
 @else
     <section>
         @if (!is_null($detail))
-            <a href="{{ url($detail) }}" class="btn-shadow btn btn-info btn-sm"><i class="bi bi-eye"></i></a>
+            <a href="{{ url($detail) }}" class="btn-shadow btn btn-info btn-icon"><i class="bi bi-eye"></i></a>
         @endif
         {{ $slot ?? '' }}
-        <button class="btn-shadow btn btn-danger btn-sm" onclick="deleteRow( {{ $nilaiid }} )"><i class="bi bi-trash"></i></button>
+        <button class="btn-shadow btn btn-danger btn-icon" onclick="deleteRow( {{ $nilaiid }} )"><i class="bi bi-trash"></i></button>
     </section>    
 @endif
