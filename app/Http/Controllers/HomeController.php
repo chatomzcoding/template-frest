@@ -10,21 +10,15 @@ class HomeController extends Controller
     public function index()
     {
         $user   = Auth::user();
-        switch ($user->level) {
-            case 'superadmin':
-                return view('superadmin.dashboard');
-                break;
-            case 'admin':
-                return view('admin.dashboard');
-                break;
-            
-            default:
-                return view('index');
-                break;
-        }
+        return view('dashboard');
     }
     public function list()
     {
         return view('list');
+    }
+
+    public function samsung()
+    {
+        return view('samsung');
     }
 }

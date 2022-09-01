@@ -18,7 +18,7 @@ class User extends Authenticatable
     use Notifiable;
     use TwoFactorAuthenticatable;
 
-    protected $table = 'skl_users';
+    protected $table = 'users';
 
     /**
      * The attributes that are mass assignable.
