@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HomepageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HpController;
+use App\Http\Controllers\WisataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +31,7 @@ Route::middleware([
 
     Route::get('/dashboard',[HomeController::class,'index'])->name('dashboard');
     Route::get('/list',[HomeController::class,'list']);
+
+    // route wisata
+    Route::resource('wisata',WisataController::class); // contoh route crud
 });

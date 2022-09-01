@@ -19,15 +19,15 @@
           <li class="menu-item">
               <a href="#" class="menu-link menu-toggle">
               <i class="menu-icon tf-icons bx bx-user"></i>
-              <div data-i18n="Menu">Menu</div>
+              <div data-i18n="Informasi">Informasi</div>
               </a>
               <ul class="menu-sub">
-                      <li class="menu-item">
-                          <a href="{{ url('list') }}" class="menu-link">
-                          <i class="menu-icon tf-icons bx bx-menu"></i>
-                          <div data-i18n="Sub Menu">Daftar List</div>
-                          </a>
-                      </li>
+                    <li class="menu-item">
+                        <a href="{{ url('wisata') }}" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-menu"></i>
+                        <div data-i18n="Daftar Wisata">Daftar Wisata</div>
+                        </a>
+                    </li>
               </ul>
           </li>
 

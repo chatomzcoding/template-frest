@@ -54,11 +54,11 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
-    // 'url' => env('APP_URL', 'http://localhost/proyek/sakola'), // setting chatomz dev
+    // 'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost/ayunghaw/frest'), // setting chatomz dev
 
-    'asset_url' => env('ASSET_URL', null),
-    // 'asset_url' => env('ASSET_URL', 'http://localhost/proyek/sakola/public'), // setting chatomz dev
+    // 'asset_url' => env('ASSET_URL', null),
+    'asset_url' => env('ASSET_URL', 'http://localhost/ayunghaw/frest/public'), // setting chatomz dev
 
     /*
     |--------------------------------------------------------------------------
