@@ -35,9 +35,8 @@
                             <td>
                                 <x-aksi :id="$item->id" link="gadget" detail="gadget/{{ $item->id }}"></x-aksi>
                             </td>
-                            <td><img src="{{ asset('img/informasi/gadget/'.$item->gambar) }}" width="100px" alt=""></td>
                             <td>{{ $item->nama }}</td>
-                            <td>{{ $item->gambar }}</td>
+                            <td><img src="{{ asset('img/informasi/gadget/'.$item->gambar) }}" width="100px" alt=""></td>
                             <td>{{ $item->kategori }}</td>
                             <td>{{ $item->layar }}</td>
                             <td>{{ $item->chipset }}</td>

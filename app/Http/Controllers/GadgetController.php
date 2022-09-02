@@ -53,6 +53,7 @@ class GadgetController extends Controller
         // simpan ke database
         Gadget::create([
             'nama' => $request->nama,
+            'gambar' => $nama_file,
             'kategori' => $request->kategori,
             'layar' => $request->layar,
             'chipset' => $request->chipset,
@@ -64,7 +65,6 @@ class GadgetController extends Controller
             'kamera_belakang' => $request->kamera_belakang,
             'kamera_depan' => $request->kamera_depan,
             'baterai' => $request->baterai,
-            'gambar' => $request->nama_file,
         ]);
 
         return back();
@@ -111,7 +111,7 @@ class GadgetController extends Controller
      * @param  \App\Models\Gadget  $gadget
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Gadget $gadget)
+    public function destroy($gadget)
     {
         $gadget = Gadget::find($gadget);
         deletefile('public/img/informasi/gadget/'.$gadget->gambar);
