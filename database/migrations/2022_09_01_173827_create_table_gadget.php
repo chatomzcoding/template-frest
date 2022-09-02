@@ -20,6 +20,7 @@ class CreateTableGadget extends Migration
             $table->string('kategori');
             $table->string('layar');
             $table->string('chipset');
+            $table->string('os');
             $table->text('gpu');
             $table->text('cpu');
             $table->text('ram');

@@ -18,6 +18,7 @@
                         <th>Kategori</th>
                         <th>Layar</th>
                         <th>Chipset</th>
+                        <th>OS</th>
                         <th>GPU</th>
                         <th>CPU</th>
                         <th>RAM</th>
@@ -31,7 +32,7 @@
                 <tbody>
                     @forelse ($gadget as $item)
                         <tr>
-                            <td>1</td>
+                            <td>{{ $loop->iteration }}</td>
                             <td>
                                 <x-aksi :id="$item->id" link="gadget" detail="gadget/{{ $item->id }}"></x-aksi>
                             </td>
@@ -40,6 +41,7 @@
                             <td>{{ $item->kategori }}</td>
                             <td>{{ $item->layar }}</td>
                             <td>{{ $item->chipset }}</td>
+                            <td>{{ $item->os }}</td>
                             <td>{{ $item->gpu }}</td>
                             <td>{{ $item->cpu }}</td>
                             <td>{{ $item->ram }}</td>
@@ -102,6 +104,10 @@
                 <div class="form-group">
                     <label for="">Chipset {!! ui_req() !!}</label>
                     <textarea name="chipset" id="" cols="30" rows="4" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">OS {!! ui_req() !!}</label>
+                    <textarea name="os" id="" cols="30" rows="4" class="form-control" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="">GPU {!! ui_req() !!}</label>

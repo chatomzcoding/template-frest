@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Gadget;
+use App\Models\Wisata;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,8 +11,8 @@ class HomeController extends Controller
     public function index()
     {
         $user   = Auth::user();
-        $gadget     = Gadget::all();
-        return view('dashboard', compact('gadget'));
+        $wisata     = Wisata::all();
+        return view('dashboard', compact('wisata'));
     }
     public function list()
     {

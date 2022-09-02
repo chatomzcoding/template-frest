@@ -18,7 +18,13 @@ class GadgetController extends Controller
         $gadget     = Gadget::all();
         return view('informasi.gadget.index', compact('gadget')); // cara memasukkan data ke view
     }
-
+    public function layanan()
+    {
+        // read
+        $layanan     = Gadget::all();
+        return view('informasi.gadget.layanan', compact('layanan')); // cara memasukkan data ke view
+    }
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -57,6 +63,7 @@ class GadgetController extends Controller
             'kategori' => $request->kategori,
             'layar' => $request->layar,
             'chipset' => $request->chipset,
+            'os' => $request->os,
             'gpu' => $request->gpu,
             'cpu' => $request->cpu,
             'ram' => $request->ram,
