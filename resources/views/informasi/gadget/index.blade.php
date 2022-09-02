@@ -8,6 +8,7 @@
         <div class="card-header">
                 <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah"><i class="fas fa-plus"></i> Tambah Data</button>
         </div>
+        <div class="table-responsive">
             <table id="example" class="table table-hover table-striped table-bordered">
                 <thead>
                     <tr>
@@ -58,6 +59,7 @@
                     @endforelse
                 </tbody>
             </table>
+        </div>
     </div>
      {{-- modal --}}
         <x-modalsimpan id="tambah" link="gadget" judul="tambah gadget">
