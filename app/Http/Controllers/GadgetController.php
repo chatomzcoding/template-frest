@@ -21,8 +21,31 @@ class GadgetController extends Controller
     public function layanan()
     {
         // read
-        $layanan     = Gadget::all();
-        return view('informasi.gadget.layanan', compact('layanan')); // cara memasukkan data ke view
+            $layanan     = Gadget::all();
+            
+            //select layanan 1
+            if (isset($_GET['gadget1'])) {
+                // jika ada cari berdasarkan title 
+                $gadget1 = $_GET['gadget1'];
+                $gadget1   = Gadget::find($gadget1);
+            } 
+            else {
+                // jika tidak ada tampilkan semua
+                $gadget1   = null;
+            }
+
+            //select layanan 2
+            if (isset($_GET['gadget2'])) {
+                // jika ada cari berdasarkan title 
+                $gadget2 = $_GET['gadget2'];
+                $gadget2   = Gadget::find($gadget2);
+            } 
+            else {
+                // jika tidak ada tampilkan semua
+                $gadget2   = null;
+            }
+            
+            return view('informasi.gadget.layanan', compact('layanan','gadget1','gadget2')); // cara memasukkan data ke view
     }
     
     /**
