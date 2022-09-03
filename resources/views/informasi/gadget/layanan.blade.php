@@ -1,16 +1,12 @@
 <x-frest-layout>
-    {{-- <x-slot name="header">
-    
-    </x-slot> --}}
 
-    {{-- @foreach ($gadget as $item)
-    @endforeach --}}
+{{-- layanan --}}
 <form action="" method="get">
-    {{-- layanan --}}
     <div class="row text-center">
 
         {{-- content 1 --}}
         <div class="col-6 me-0">
+
             {{-- select 1 --}}
             <div class="form-group mb-4">
                 <label for="">Smartphone 1 {!! ui_req() !!}</label>
@@ -35,16 +31,12 @@
 
                 </select>
             </div>
-
-
             {{-- select 1 END --}}
-
             {{-- gadget 1 --}}
             <div class="col">
                 @if (is_null($gadget1))
                     Belum ada hp
                 @else
-                
                     <div class="card h-100">
                         <div class="row mt-3">
                             <div class="col-4"></div>
@@ -56,13 +48,13 @@
             
                         <div class="card-body ">
                             <h5 class="card-title">{{ $gadget1->nama }}</h5>
-                            <p>Brand:</p>
+                            <p>Brand: {{ $gadget1->kategori }}</p>
                             {{-- <a href="/categories/{{ $post->category->slug }}" class="text-decoration-none">{{ $post->category->name }}</a> --}}
                             {{-- <p class="card-text">{{ ucwords($item->nama) }}</p> --}}
                         </div>
             
                         <ul class="list-group list-group-flush mx-2 mb-2">
-                            <li class="list-group-item border-top">Layar</li>
+                            <li class="list-group-item border-top">Layar</li>``
                             <li class="list-group-item list-group-item-secondary">{{ $gadget1->layar }}</li>
                             <li class="list-group-item">Chipset</li>
                             <li class="list-group-item list-group-item-secondary">{{ $gadget1->chipset }}</li>
@@ -92,17 +84,17 @@
                                 <p class="card-text text-end"><small class="text-muted">Terakhir di update {{ $post->created_at->diffForHumans() }}</small></p>
                             </small>
                         </div> --}}
-            
                     </div>
-
                 @endif
             </div>
             {{-- gadget 1 END --}}
+
         </div>
         {{-- content 1 END --}}
 
         {{-- content 2 --}}
         <div class="col-6">
+
             {{-- select 2 --}}
             <div class="form-group mb-4">
                 <label for="">Smartphone 2 {!! ui_req() !!}</label>
@@ -128,7 +120,6 @@
                 </select>
             </div>
             {{-- select 2 END --}}
-
             {{-- gadget 2 --}}
             <div class="col">
                 @if (is_null($gadget2))
@@ -147,7 +138,7 @@
             
                         <div class="card-body ">
                                 <h5 class="card-title">{{ $gadget2->nama }}</h5>
-                                <p>Brand: </p>
+                                <p>Brand: {{ $gadget2->kategori }}</p>
                                 {{-- <a href="/categories/{{ $post->category->slug }}" class="text-decoration-none">{{ $post->category->name }}</a> --}}
                             {{-- <p class="card-text">{{ ucwords($item->nama) }}</p> --}}
                         </div>
@@ -183,17 +174,16 @@
                                 <p class="card-text text-end"><small class="text-muted">Terakhir di update {{ $post->created_at->diffForHumans() }}</small></p>
                             </small>
                         </div> --}}
-            
                     </div>
-
                 @endif
             </div>
             {{-- gadget 2 END --}}
+
         </div>
         {{-- content 2 --}}
 
     </div>
-    {{-- layanan END --}}
 </form>
+{{-- layanan END --}}
 
 </x-frest-layout>

@@ -42,3 +42,4 @@ Route::middleware([
     Route::get('/layanan',[GadgetController::class, 'layanan']); // contoh route crud
 
 });
+

@@ -53,7 +53,7 @@
             <li class="menu-item">
               <a href="{{ url('layanan') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-menu"></i>
-                <div data-i18n="Layanan">Layanan</div>
+                <div data-i18n="Layanan Gadget">Layanan Gadget</div>
               </a>
             </li>
           </ul>

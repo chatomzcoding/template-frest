@@ -51,7 +51,7 @@
                                     data-kamera_belakang="{{ $item->kamera_belakang }}" 
                                     data-kamera_depan="{{ $item->kamera_depan }}" 
                                     data-baterai="{{ $item->baterai }}" 
-                                    data-id="{{ $item->id }}" 
+                                    data-id="{{ $item->id }}"
                                     data-bs-target="#ubah" title="" class="dropdown-item text-success" data-original-title="Edit Task">
                                         <i class="fa fa-edit" style="width: 20px;"></i> EDIT
                                     </button>
@@ -92,28 +92,29 @@
                 <div class="form-group">
                     <label for="">Kategori {!! ui_req() !!}</label>
                     <select name="kategori" id="" class="form-control">
-                        <option value="vivo">vivo</option>
-                        <option value="realme">realme</option>
-                        <option value="samsung">samsung</option>
-                        <option value="iphone">iphone</option>
-                        <option value="oppo">oppo</option>
-                        <option value="xiaomi">xiaomi</option>
-                        <option value="sony">sony</option>
-                        <option value="lenovo">lenovo</option>
-                        <option value="lg">lg</option>
-                        <option value="evercoss">evercoss</option>
-                        <option value="huawei">huawei</option>
-                        <option value="polytron">polytron</option>
+                        <option value="Vivo">Vivo</option>
+                        <option value="Realme">Realme</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Iphone">Iphone</option>
+                        <option value="Oppo">Oppo</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Sony">Sony</option>
+                        <option value="Lenovo">Lenovo</option>
+                        <option value="Lg">Lg</option>
+                        <option value="Evercoss">Evercoss</option>
+                        <option value="Huawei">Huawei</option>
+                        <option value="Polytron">Polytron</option>
                         <option value="ZTE">ZTE</option>
-                        <option value="oneplus">oneplus</option>
-                        <option value="meizu">meizu</option>
-                        <option value="luna">luna</option>
+                        <option value="Oneplus">Oneplus</option>
+                        <option value="Meizu">Meizu</option>
+                        <option value="Luna">Luna</option>
                         <option value="Advan">Advan</option>
                         <option value="Asus">Asus</option>
                         <option value="HTC">HTC</option>
                         <option value="Lava">Lava</option>
                         <option value="Mito">Mito</option>
                         <option value="Nokia">Nokia</option>
+                        <option value="Infinix">Infinix</option>
                     </select>
                 </div>
                 {{-- <div class="form-group">
@@ -181,28 +182,29 @@
                 <div class="form-group">
                     <label for="">Kategori {!! ui_req() !!}</label>
                     <select name="kategori" id="kategori" class="form-control">
-                        <option value="vivo">vivo</option>
-                        <option value="realme">realme</option>
-                        <option value="samsung">samsung</option>
-                        <option value="iphone">iphone</option>
-                        <option value="oppo">oppo</option>
-                        <option value="xiaomi">xiaomi</option>
-                        <option value="sony">sony</option>
-                        <option value="lenovo">lenovo</option>
-                        <option value="lg">lg</option>
-                        <option value="evercoss">evercoss</option>
-                        <option value="huawei">huawei</option>
-                        <option value="polytron">polytron</option>
+                        <option value="Vivo">Vivo</option>
+                        <option value="Realme">Realme</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Iphone">Iphone</option>
+                        <option value="Oppo">Oppo</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Sony">Sony</option>
+                        <option value="Lenovo">Lenovo</option>
+                        <option value="Lg">Lg</option>
+                        <option value="Evercoss">Evercoss</option>
+                        <option value="Huawei">Huawei</option>
+                        <option value="Polytron">Polytron</option>
                         <option value="ZTE">ZTE</option>
-                        <option value="oneplus">oneplus</option>
-                        <option value="meizu">meizu</option>
-                        <option value="luna">luna</option>
+                        <option value="Oneplus">Oneplus</option>
+                        <option value="Meizu">Meizu</option>
+                        <option value="Luna">Luna</option>
                         <option value="Advan">Advan</option>
                         <option value="Asus">Asus</option>
                         <option value="HTC">HTC</option>
                         <option value="Lava">Lava</option>
                         <option value="Mito">Mito</option>
                         <option value="Nokia">Nokia</option>
+                        <option value="Infinix">Infinix</option>
                     </select>
                 </div>
                 {{-- <div class="form-group">
