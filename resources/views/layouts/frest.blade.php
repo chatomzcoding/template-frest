@@ -52,6 +52,10 @@
     <!-- Page CSS -->
     {{ $vendor_page ?? ''}}
 
+    <!-- Page CSS carosel -->
+    <link rel="stylesheet" href="{{ asset('template/frest/assets/vendor/libs/swiper/swiper.css')}}" />
+    <link rel="stylesheet" href="{{ asset('template/frest/assets/vendor/css/pages/ui-carousel.css')}}" />
+
     <!-- Helpers -->
     <script src="{{ asset('template/frest/assets/vendor/js/helpers.js')}}"></script>
 
@@ -719,6 +723,10 @@
     {{ $vendor_js ?? ''}}
     <script src="{{ asset('template/frest/assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
     <script src="{{ asset('template/frest/assets/vendor/libs/sweetalert2/sweetalert2.js')}}"></script>
+    <!-- Vendors JS carosel -->
+    <script src="{{ asset('template/frest/assets/vendor/libs/swiper/swiper.js')}}"></script>
+    <!-- Page JS carosel -->
+    <script src="{{ asset('template/frest/assets/js/ui-carousel.js')}}"></script>
 
     <!-- Main JS -->
     <script src="{{ asset('template/frest/assets/js/main.js')}}"></script>
