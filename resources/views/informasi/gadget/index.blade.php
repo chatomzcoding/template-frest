@@ -54,15 +54,9 @@
                                     data-kamera_belakang="{{ $item->kamera_belakang }}" 
                                     data-kamera_depan="{{ $item->kamera_depan }}" 
                                     data-baterai="{{ $item->baterai }}" 
-<<<<<<< HEAD
                                     data-id="{{ $item->id }}" 
                                     data-bs-target="#ubahdata" title="" class="btn btn-success btn-icon" data-original-title="Edit Task">
                                         <i class="fa fa-edit" style="width: 20px;"></i>
-=======
-                                    data-id="{{ $item->id }}"
-                                    data-bs-target="#ubah" title="" class="dropdown-item text-success" data-original-title="Edit Task">
-                                        <i class="fa fa-edit" style="width: 20px;"></i> EDIT
->>>>>>> 68078d0f80db227ad1268a9274523d42ac0c8ffc
                                     </button>
                                 </x-aksi>
 
