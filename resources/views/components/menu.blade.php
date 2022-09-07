@@ -56,6 +56,12 @@
                 <div data-i18n="Layanan Gadget">Layanan Gadget</div>
               </a>
             </li>
+            <li class="menu-item">
+              <a href="{{ url('dashgadget') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-menu"></i>
+                <div data-i18n="Beranda Gadget">Beranda Gadget</div>
+              </a>
+            </li>
           </ul>
         </li>
       </ul>

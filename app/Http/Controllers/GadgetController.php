@@ -47,7 +47,12 @@ class GadgetController extends Controller
             
             return view('informasi.gadget.layanan', compact('layanan','gadget1','gadget2')); // cara memasukkan data ke view
     }
-    
+    public function dashgadget()
+    {
+        // read
+        $dashgadget     = Gadget::all();
+        return view('informasi.gadget.dashgadget', compact('dashgadget')); // cara memasukkan data ke view
+    }
     /**
      * Show the form for creating a new resource.
      *

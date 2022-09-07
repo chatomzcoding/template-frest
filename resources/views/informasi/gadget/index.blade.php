@@ -35,6 +35,10 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>
+                                {{-- <div class="mb-2">
+                                    <a href="" class="btn btn-info">Edit</a>
+                                </div> --}}
+
                                 <x-aksi :id="$item->id" link="gadget" detail="gadget/{{ $item->id }}">
 
                                     <button type="button" data-bs-toggle="modal"  
@@ -57,6 +61,7 @@
                                     </button>
 
                                 </x-aksi>
+
                             </td>
                             <td>{{ $item->nama }}</td>
                             <td><img src="{{ asset('img/informasi/gadget/'.$item->gambar) }}" width="100px" alt=""></td>
@@ -207,10 +212,10 @@
                         <option value="Infinix">Infinix</option>
                     </select>
                 </div>
-                {{-- <div class="form-group">
-                    <label for="">Alamat {!! ui_req() !!}</label>
-                    <input type="text" name="alamat" class="form-control" value="{{ old('alamat') }}" required>
-                </div> --}}
+                                        {{-- <div class="form-group">
+                                            <label for="">Alamat {!! ui_req() !!}</label>
+                                            <input type="text" name="alamat" class="form-control" value="{{ old('alamat') }}" required>
+                                        </div> --}}
                 <div class="form-group">
                     <label for="">Layar {!! ui_req() !!}</label>
                     <textarea name="layar" id="layar" cols="30" rows="4" class="form-control" required></textarea>

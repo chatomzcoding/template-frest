@@ -40,6 +40,10 @@ Route::middleware([
     Route::resource('gadget',GadgetController::class); // contoh route crud
     // route layanan
     Route::get('/layanan',[GadgetController::class, 'layanan']); // contoh route crud
+    // route dashgadget
+    Route::get('/dashgadget',[GadgetController::class, 'dashgadget']); // contoh route crud
+
+    //
 
 });
 
