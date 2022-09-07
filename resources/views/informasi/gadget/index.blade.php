@@ -36,7 +36,6 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>
                                 <x-aksi :id="$item->id" link="gadget" detail="gadget/{{ $item->id }}">
-
                                     <button type="button" data-bs-toggle="modal"  
                                     data-nama="{{ $item->nama }}"  
                                     data-kategori="{{ $item->kategori }}"  
@@ -52,10 +51,9 @@
                                     data-kamera_depan="{{ $item->kamera_depan }}" 
                                     data-baterai="{{ $item->baterai }}" 
                                     data-id="{{ $item->id }}" 
-                                    data-bs-target="#ubah" title="" class="dropdown-item text-success" data-original-title="Edit Task">
-                                        <i class="fa fa-edit" style="width: 20px;"></i> EDIT
+                                    data-bs-target="#ubahdata" title="" class="btn btn-success btn-icon" data-original-title="Edit Task">
+                                        <i class="fa fa-edit" style="width: 20px;"></i>
                                     </button>
-
                                 </x-aksi>
                             </td>
                             <td>{{ $item->nama }}</td>
@@ -172,11 +170,11 @@
         </x-modalsimpan>
 
         {{-- modal ubah --}}
-        <x-modalubah link="gadget" judul="edit gadget">
+        <x-modalubah id="ubahdata" link="gadget" judul="edit gadget">
             <section>
                 <div class="form-group">
                     <label for="">Nama {!! ui_req() !!}</label>
-                    <input type="text" name="nama" id="nama" class="form-control" value="{{ old('nama') }}" required>
+                    <input type="text" name="nama" id="nama" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label for="">Kategori {!! ui_req() !!}</label>
@@ -262,9 +260,8 @@
 
         <x-slot name="kodejs">
             <script>
-                $('#ubah').on('show.bs.modal', function (event) {
+                $('#ubahdata').on('show.bs.modal', function (event) {
                     var button = $(event.relatedTarget)
-
                     var nama = button.data('nama')
                     var kategori = button.data('kategori')
                     var layar = button.data('layar')
@@ -278,7 +275,6 @@
                     var kamera_belakang = button.data('kamera_belakang')
                     var kamera_depan = button.data('kamera_depan')
                     var baterai = button.data('baterai')
-                    
                     var id = button.data('id')
 
                     var modal = $(this)

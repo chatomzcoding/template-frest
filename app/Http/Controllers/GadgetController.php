@@ -130,9 +130,25 @@ class GadgetController extends Controller
      * @param  \App\Models\Gadget  $gadget
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gadget $gadget)
+    public function update(Request $request)
     {
-        //
+        Gadget::where('id',$request->id)->update([
+            'nama' => $request->nama,
+            'kategori' => $request->kategori,
+            'layar' => $request->layar,
+            'chipset' => $request->chipset,
+            'os' => $request->os,
+            'gpu' => $request->gpu,
+            'cpu' => $request->cpu,
+            'ram' => $request->ram,
+            'memori_internal' => $request->memori_internal,
+            'memori_eksternal' => $request->memori_eksternal,
+            'kamera_belakang' => $request->kamera_belakang,
+            'kamera_depan' => $request->kamera_depan,
+            'baterai' => $request->baterai,
+        ]);
+
+        return back();
     }
 
     /**
